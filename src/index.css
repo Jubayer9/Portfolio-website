@@ -1,0 +1,400 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-horizontal a:hover,
+.menu-horizontal a.active {
+  color: #0ef;
+  background-color: rgba(0, 238, 255, 0.058);
+}
+.menu-horizontal a{
+  transition: .3s;
+  opacity: 0;
+  animation: slideTop .5s ease forwards;
+  
+  
+}
+.home {
+
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content {
+  max-width: 600px;
+}
+
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700px;
+  opacity: 0;
+  animation:slideBottom 1s ease forwards;
+  animation-delay: .7s;
+}
+
+.home-content h3 span {
+  color: #0ef;
+}
+
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 30px;
+  animation:slideTop 1s ease forwards;
+  animation-delay: .7s;
+}
+
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700px;
+  margin: -4px 0;
+  opacity: 0;
+  animation:slideRight 1s ease forwards;
+  animation-delay: .1s;
+}
+.home-content p{
+  opacity: 0;
+  animation:slideLeft 1s ease forwards;
+  animation-delay: .1s;
+}
+.contact{
+  opacity: 0;
+  animation:slideTop 1s ease forwards;
+  animation-delay: .1s;
+}
+
+.home-img Img {
+  width: 500px;
+  margin-right: -20px;
+  opacity: 0;
+  animation:zoomIn 1s ease forwards ,floatImage 4s ease-in-out infinite;
+  animation-delay: .2s,1s;
+
+}
+.About-img{
+border-left:2px solid #0ef;
+
+}
+.GO:hover{
+  color: #1f242d;
+  box-shadow: 0 0 10px #0ef;
+  border: none;
+  font-size:large;
+  background-color: #0ef;
+
+}
+.GO{
+
+  color: #ffffff;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  border: none;
+  animation:slideTop 3.5s ease forwards;
+  animation-delay: .2s;
+  background-color: rgba(0, 238, 255, 0.041);
+}
+.GO1{
+  background-color: rgba(0, 238, 255, 0.294);
+  color: #ffffff;
+  margin-left: 45px;
+  animation:zoomIn 2s ease forwards ,GO1 4s ease-in-out infinite;
+  animation-delay: 2s,2s;
+  box-shadow: 0 0 10px #0ef
+  
+}
+.GO2{
+  background-color: rgba(0, 238, 255, 0.294);
+  color: #ffffff;
+  animation:zoomIn 2s ease forwards ,GO2 4s ease-in-out infinite;
+  animation-delay: 2s,2s;
+  box-shadow: 0 0 10px #0ef
+}
+.GO3{
+  background-color: rgba(0, 238, 255, 0.294);
+  color: #ffffff;
+  animation:zoomIn 2s ease forwards ,GO3 4s ease-in-out infinite;
+  animation-delay: 2s,2s;
+  box-shadow: 0 0 10px #0ef
+}
+.icon{
+  font-size: x-large;
+
+  animation:zoomIn 3s ease forwards ,floatIcon 6s ease-in-out infinite;
+  animation-delay: 1s,1s;
+}
+.icon:hover{
+  color: #ffffff;
+  font-size: xx-large;
+
+  
+
+}
+.About-img img{
+  width: 300px;
+  margin-right: -20px;
+  opacity: 0;
+  animation:zoomIn 2s ease forwards ,floatAboutImage 4s ease-in-out infinite;
+  animation-delay: 2s,2s;
+}
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #0ef;
+  border-radius: 50%;
+  margin: 30px 15px 30px 0;
+  color: #0ef;
+  text-decoration: none;
+  transition: .5s ease;
+  opacity: 0;
+  animation:slideLeft 2.5s ease forwards;
+  animation-delay: .1s;
+}
+
+.social-media a:hover {
+  background: #0ef;
+  color: #1f242d;
+  box-shadow: 0 0 20px #0ef;
+}
+
+.Btn {
+  color: #1f242d;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 40px;
+  box-shadow: 0 0 10px #0ef;
+  background-color: #0ef;
+  font-weight: 600;
+  opacity: 0;
+  animation:slideTop 1s ease forwards,floatBtn 3s ease-in-out infinite;
+
+  animation-delay: .2s,1s;
+}
+.skills{
+  opacity: 0;
+  animation: zoomIn 2s ease forwards,floatSkills 5s ease-in-out infinite;
+color: #0ef;
+
+  animation-delay: 2s,1s;
+}
+
+.bbttnn,.bbttnn:hover{
+  color: #1f242d;
+  box-shadow: 0 0 10px #0ef;
+  border: none;
+
+  background-color: #0ef;
+}
+.About{
+  opacity: 0;
+  
+  animation: zoomIn 1s ease forwards,floatSkills 1s ease-in-out infinite;
+  animation-delay: 1s,1s;
+}
+.About:hover{
+  color: #0ef;
+  font-size:larger;
+}
+.Skills{
+  box-shadow: 0 0 10px #0ef
+  
+}
+.Jubayer{
+  cursor: default;
+  box-shadow: 0 0 10px #0ef;
+  color: white;
+
+  opacity: 0;
+  animation:slideRight 1s ease forwards;
+}
+@keyframes slideRight {
+  
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideTop {
+  
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideBottom {
+  
+  0%{
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideLeft {
+  
+  0%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes floatImage {
+  
+  0%{
+    transform: translateY(0);
+    
+  }
+  50%{
+    transform: translateY(-25px);
+  
+  }
+  100%{
+    transform: translateY(0);
+
+  }
+}
+@keyframes floatAboutImage {
+  
+  0%{
+    transform: translateX(50px);
+    
+  }
+ 
+  50%{
+    transform: translateX(-50px);
+  }
+ 
+  100%{
+    transform: translateX(50px);
+
+  }
+}
+@keyframes floatIcon {
+  
+  0%{
+    transform: translateX(55px);
+    
+  }
+ 
+  50%{
+    transform: translateX(-30px);
+  }
+ 
+  100%{
+    transform: translateX(55px);
+
+  }
+}
+@keyframes floatBtn {
+  
+  0%{
+    transform: translateY(20px);
+    
+  }
+
+  75%{
+    transform: scale(1.2);
+
+  }
+  100%{
+    transform: translateY(20px);
+
+  }
+}
+@keyframes floatSkills {
+  
+  0%{
+    transform: scale(0.5)
+    
+  }
+
+
+  100%{
+    transform: scale(1);
+
+  }
+}
+
+
+@keyframes GO1 {
+  
+  0%{
+    transform: translateY(20px);
+  
+  }
+ 
+  50%{
+    transform: translateY(-20px);
+  }
+ 
+  100%{
+    transform: translateY(20px);
+
+  }
+}
+
+ @keyframes GO2 {
+  
+  0%{
+    transform: translateY(-20px);
+    
+  }
+ 
+  50%{
+    transform: translateY(20px);
+  }
+ 
+  100%{
+    transform: translateY(-20px);
+
+  }
+}
+
+
+@keyframes GO3 {
+  
+  0%{
+    transform: translateY(20px);
+    
+  }
+ 
+  50%{
+    transform: translateY(-20px);
+  }
+ 
+  100%{
+    transform: translateY(20px);
+
+  }
+} 
